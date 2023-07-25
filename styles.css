@@ -1,0 +1,17 @@
+.container {
+  height: 150px;
+  width: 50px;
+  background-color: #c2e3ff;
+  position: relative;
+}
+
+.fill {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: #008cff;
+}
+
+.input-group {
+  margin: 40px auto;
+}
