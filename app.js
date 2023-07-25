@@ -2,6 +2,7 @@ const minEL = document.querySelector(".min");
 const maxEl = document.querySelector(".max");
 const drawBtn = document.querySelector(".draw");
 const fillEl = document.querySelector(".fill");
+const gradientFillEl = document.getElementById("gradient-fill");
 const canvas = document.querySelector(".canvas");
 
 const ctx = canvas.getContext("2d");
@@ -34,4 +35,7 @@ drawBtn.addEventListener("click", () => {
   ctx.arc(canvas.width / 2, canvas.height / 2, 100, 0, circleFill);
   ctx.closePath();
   ctx.fill();
+
+  // update the gradient fill element
+  gradientFillEl.style.height = `${fillPercentage}%`;
 });
